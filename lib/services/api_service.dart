@@ -14,12 +14,10 @@ class ApiService {
       if (response.statusCode == 200) {
         print('Response body: ${response.body}');
       }
-
       List posts = jsonDecode(response.body);
       posts.forEach((element) {
         postList.add(Post.fromMap(element));
       });
-
       print(postList.length);
       postNotifier.setPostList(postList);
     });

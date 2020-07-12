@@ -24,7 +24,6 @@ class _MyHomePageState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     PostsNotifier postNotifier = Provider.of<PostsNotifier>(context);
-
     return Scaffold(
         appBar: AppBar(
           title: Text("MVVM + Provider Demo"),
